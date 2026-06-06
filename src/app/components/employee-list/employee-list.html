@@ -1,0 +1,125 @@
+<div class="container mt-4">
+
+  <div class="card shadow p-4">
+
+    <h1 class="text-center mb-4">
+      Employee Management System
+    </h1>
+
+    <h3>
+      {{ isEditMode ? 'Edit Employee' : 'Add Employee' }}
+    </h3>
+
+    <div class="mb-3">
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="newEmployee.name"
+        placeholder="Enter Name"
+        required>
+    </div>
+
+    <div class="mb-3">
+      <input
+        type="email"
+        class="form-control"
+        [(ngModel)]="newEmployee.email"
+        placeholder="Enter Email"
+        required>
+    </div>
+
+    <div class="mb-3">
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="newEmployee.department"
+        placeholder="Enter Department"
+        required>
+    </div>
+
+    <div class="mb-3">
+      <input
+        type="number"
+        class="form-control"
+        [(ngModel)]="newEmployee.salary"
+        placeholder="Enter Salary"
+        required>
+    </div>
+
+    @if (!isEditMode) {
+      <button
+        class="btn btn-success"
+        (click)="addEmployee()">
+        Add Employee
+      </button>
+    }
+
+    @if (isEditMode) {
+      <button
+        class="btn btn-primary"
+        (click)="updateEmployee()">
+        Update Employee
+      </button>
+    }
+
+  </div>
+
+  <div class="card shadow p-4 mt-4">
+
+    <h3>Search Employee</h3>
+
+    <input
+      type="text"
+      class="form-control mb-3"
+      [(ngModel)]="searchText"
+      (input)="searchEmployee()"
+      placeholder="Search by Name">
+
+    <table class="table table-bordered table-striped table-hover">
+
+      <thead class="table-dark">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Department</th>
+          <th>Salary</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr *ngFor="let emp of filteredEmployees">
+
+          <td>{{ emp.id }}</td>
+          <td>{{ emp.name }}</td>
+          <td>{{ emp.email }}</td>
+          <td>{{ emp.department }}</td>
+          <td>{{ emp.salary }}</td>
+
+          <td>
+
+            <button
+              class="btn btn-warning btn-sm me-2"
+              (click)="editEmployee(emp)">
+              Edit
+            </button>
+
+            <button
+              class="btn btn-danger btn-sm"
+              (click)="deleteEmployee(emp.id)">
+              Delete
+            </button>
+
+          </td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>
