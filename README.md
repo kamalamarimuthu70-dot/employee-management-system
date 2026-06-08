@@ -1,59 +1,88 @@
-# EmployeeApp
+# Employee Management System
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.11.
+## Project Overview
 
-## Development server
+Employee Management System is a full-stack web application developed using Angular, ASP.NET Core Web API, and SQL Server. The application allows users to manage employee records through Create, Read, Update, and Delete (CRUD) operations.
 
-To start a local development server, run:
+## Features
 
-```bash
-ng serve
-```
+* Add New Employee
+* View Employee List
+* Search Employee by Name
+* Update Employee Details
+* Delete Employee Records
+* Form Validation
+* Responsive Bootstrap User Interface
+* REST API Integration
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Technologies Used
 
-## Code scaffolding
+### Frontend
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* Angular
+* TypeScript
+* HTML
+* CSS
+* Bootstrap
 
-```bash
-ng generate component component-name
-```
+### Backend
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+* ASP.NET Core Web API
+* C#
 
-```bash
-ng generate --help
-```
+### Database
 
-## Building
+* SQL Server
+* Entity Framework Core
 
-To build the project run:
+### Tools
 
-```bash
-ng build
-```
+* Visual Studio 2022
+* Visual Studio Code
+* Git
+* GitHub
+* Swagger
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Screenshots
 
-## Running unit tests
+### Dashboard
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+<img width="938" height="379" alt="ss2" src="https://github.com/user-attachments/assets/793e15e1-3c08-4579-9af1-67e8b5d74e10" />
 
-```bash
-ng test
-```
+### Employee List
 
-## Running end-to-end tests
+<img width="924" height="469" alt="ss3" src="https://github.com/user-attachments/assets/ffcfa041-27de-4453-8720-b18a7f5ac287" />
 
-For end-to-end (e2e) testing, run:
+### Employee Update Operation
 
-```bash
-ng e2e
-```
+<img width="952" height="486" alt="ss1" src="https://github.com/user-attachments/assets/b4af01f0-cc63-4297-928f-820e1f372e74" />
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### Employee Search Functionality
 
-## Additional Resources
+<img width="839" height="222" alt="ss4" src="https://github.com/user-attachments/assets/421424df-fe52-48fb-af6f-de72c4ced23f" />
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Project Structure
+
+Frontend (Angular)
+
+Backend (ASP.NET Core Web API)
+
+Database (SQL Server)
+
+## Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+* Angular Component Development
+* API Integration
+* CRUD Operations
+* SQL Server Database Management
+* Entity Framework Core
+* Bootstrap UI Design
+* Git and GitHub Version Control
+
+GitHub:
+https://github.com/kamalamarimuthu70-dot
+
+LinkedIn:
+(https://www.linkedin.com/in/kamala-m-007184366)
